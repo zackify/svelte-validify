@@ -75,7 +75,7 @@ Render inputs, and set custom rules. You can see this in action by running the e
 </script>
 
 <Form {form} onSubmit={() => console.log($form.values)}>
-  <Input name="name" rules={[ isRequired]} />
+  <Input name="name" rules={[isRequired]} />
   <Input name="email" rules={[isRequired]} />
   <button type="submit" disabled={$form.disabled}>Hello!</button>
 </Form>
