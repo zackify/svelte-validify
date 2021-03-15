@@ -66,10 +66,11 @@ Render inputs, and set custom rules. You can see this in action by running the e
   import { Form, createForm } from "svelte-validify";
   import Input from "./Input.svelte";
 
-  //Always create a form, and add some optional values
+  // Always create a form, and add some optional values
   let form = createForm({ name: "Bob", email: "test" });
 
-  //Dummy rulee
+  // Rules run at the correct times, on blur, or onChange after initial blur / submit
+  // you don't have to think about it!
   let isRequired = (value) => (!value ? "Field is required" : "");
 </script>
 
